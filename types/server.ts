@@ -1,4 +1,4 @@
-import { GameRole, SerializedPlayer } from './types';
+import { GameRole, SerializedPlayer, Location } from './types';
 
 export enum ServerMessageType {
   PLAYER_JOIN = 'server:playerJoin',
