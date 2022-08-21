@@ -1,3 +1,5 @@
+import { Location } from './types';
+
 export enum ClientMessageType {
   JOIN = 'client:join',
   LEAVE = 'client:leave',
