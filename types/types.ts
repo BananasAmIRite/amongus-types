@@ -8,6 +8,7 @@ export interface SerializedPlayer {
   position: Location;
   isDead: boolean;
   deadBodyPosition: Location;
+  displayName: string;
 }
 
 export enum GameRole {
