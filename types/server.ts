@@ -24,7 +24,7 @@ export type ServerAmongusPayloadType = {
   [ServerMessageType.PLAYER_LEAVE]: { playerId: string };
 
   [ServerMessageType.PLAYER_MOVE]: { playerId: string; position: Location };
-  [ServerMessageType.PLAYER_DEATH]: { playerId: string };
+  [ServerMessageType.PLAYER_DEATH]: { playerId: string; deathPosition: Location };
 
   [ServerMessageType.LOAD_MAP]: { resource: string };
 
