@@ -1,4 +1,4 @@
-import { GameRole, SerializedPlayer, Location } from './types';
+import { GameRole, SerializedPlayer, Location, AmongusTask } from './types';
 
 export enum ServerMessageType {
   PLAYER_JOIN = 'server:playerJoin',
@@ -30,9 +30,7 @@ export type ServerAmongusPayloadType = {
 
   [ServerMessageType.UUID]: { uuid: string };
   [ServerMessageType.GAME_PLAYER_DATA]: {
-    tasks: {
-      type: string;
-      position: Location;
-    }[];
+    tasks: AmongusTask[];
+    role: GameRole;
   };
 };
