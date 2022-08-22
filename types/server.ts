@@ -18,7 +18,7 @@ export enum ServerMessageType {
 
 export type ServerAmongusPayloadType = {
   [ServerMessageType.PLAYER_JOIN]: { player: SerializedPlayer };
-  [ServerMessageType.ACCEPT_JOIN]: { selfPlayer: SerializedPlayer };
+  [ServerMessageType.ACCEPT_JOIN]: { gameUuid: string; selfPlayer: SerializedPlayer };
   [ServerMessageType.DENY_JOIN]: { reason: string };
   [ServerMessageType.GAME_END]: { winner: GameRole };
   [ServerMessageType.PLAYER_LEAVE]: { playerId: string };
