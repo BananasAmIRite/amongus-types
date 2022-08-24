@@ -10,6 +10,8 @@ export enum ClientMessageType {
 
   FINISH_TASK = 'client:finishTask',
   VENT = 'client:vent',
+  EXIT_VENT = 'client:exitVent',
+  KILL = 'client:kill',
 }
 
 export type ClientAmongusPayloadType = {
@@ -22,4 +24,6 @@ export type ClientAmongusPayloadType = {
 
   [ClientMessageType.FINISH_TASK]: { taskType: string };
   [ClientMessageType.VENT]: { id: number };
+  [ClientMessageType.EXIT_VENT]: {};
+  [ClientMessageType.KILL]: { playerId: string };
 };
