@@ -26,7 +26,7 @@ export type ServerAmongusPayloadType = {
 
   [ServerMessageType.PLAYER_MOVE]: { playerId: string; position: Location };
   [ServerMessageType.PLAYER_DEATH]: { playerId: string; deathPosition: Location };
-  [ServerMessageType.PLAYER_SET_VISIBLE]: { visibility: boolean };
+  [ServerMessageType.PLAYER_SET_VISIBLE]: { playerId: string; visibility: boolean };
 
   [ServerMessageType.LOAD_MAP]: { resource: string };
 
