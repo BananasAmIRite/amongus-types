@@ -9,6 +9,7 @@ export enum ClientMessageType {
   START_GAME = 'client:startGame',
 
   FINISH_TASK = 'client:finishTask',
+  VENT = 'client:vent',
 }
 
 export type ClientAmongusPayloadType = {
@@ -20,4 +21,5 @@ export type ClientAmongusPayloadType = {
   [ClientMessageType.START_GAME]: {};
 
   [ClientMessageType.FINISH_TASK]: { taskType: string };
+  [ClientMessageType.VENT]: { id: number };
 };

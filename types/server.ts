@@ -9,6 +9,7 @@ export enum ServerMessageType {
 
   PLAYER_MOVE = 'server:playerMove',
   PLAYER_DEATH = 'server:playerDeath',
+  PLAYER_SET_VISIBLE = 'server:playerSetVisible',
 
   LOAD_MAP = 'server:loadMap',
 
@@ -25,6 +26,7 @@ export type ServerAmongusPayloadType = {
 
   [ServerMessageType.PLAYER_MOVE]: { playerId: string; position: Location };
   [ServerMessageType.PLAYER_DEATH]: { playerId: string; deathPosition: Location };
+  [ServerMessageType.PLAYER_SET_VISIBLE]: { visbility: boolean };
 
   [ServerMessageType.LOAD_MAP]: { resource: string };
 
