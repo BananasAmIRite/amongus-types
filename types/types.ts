@@ -9,6 +9,7 @@ export interface SerializedPlayer {
   isDead: boolean;
   deadBodyPosition: Location;
   displayName: string;
+  visible: boolean;
 }
 
 export enum GameRole {
@@ -19,4 +20,10 @@ export enum GameRole {
 export interface AmongusTask {
   type: string;
   position: Location;
+}
+
+export interface AmongusVent {
+  id: number;
+  position: Location;
+  connectingVents: AmongusVent['id'][];
 }
