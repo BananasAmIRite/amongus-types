@@ -27,3 +27,19 @@ export interface AmongusVent {
   position: Location;
   connectingVents: AmongusVent['id'][];
 }
+
+export enum CharacterType {
+  RED,
+  PURPLE,
+  CYAN,
+  BLACK,
+  YELLOW,
+  LIME,
+  GREEN,
+  ORANGE,
+  WHITE,
+  BLUE,
+  BROWN,
+  PINK,
+  GRAY,
+}
